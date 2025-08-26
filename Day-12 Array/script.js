@@ -29,4 +29,66 @@ console.log("arr1", arr1);
 
  /**
   *  ! Array Inbuilt Methods              
-*/
+
+  const arr= [10,20,30,40];
+  arr.push(40);
+  arr.pop()
+
+  arr.unshift(10);
+  arr.shift();
+
+  const idx= arr.indexOf(40);
+  console.log("Index:" , idx);
+
+  const s1 = ["html" , "css" , "js" , "react"];
+  const res = s1.includes("react");
+  console.log("res:" , res);
+
+
+
+  const arr1=[10,20,30,40,50];
+    arr1.reverse();
+    console.log("arr1:",arr1);
+
+    */
+
+    /**
+     * ! Different Between Splice and Slice ?
+     */
+
+
+     /**
+      * ! Splice :- Insertion , Deletion And Updation
+      *  a :- Stsrting Index
+      *  b :- No of Element to be Deleted
+      *  c :- New values to be added
+      *  ! It is modifies the Original Arrary
+      *  ! It is Return arrary of deleted element
+      
+
+     const arr=["html" ,"corejava" , "js" , "Script"];
+     const x = arr.splice(1,2,"css", "js","sass");
+     console.log("arr:",arr);
+     console.log("x:",x);
+
+     */
+
+     /**
+      * ! Slice(a,b)
+      * a :- Starting index
+      * b :- last index + 1
+      * ! It returns a new array 
+      *  ! It doen't modify the original array
+      
+
+     const arr = ["html" , "css" , "js" , "java" , "Sql" ,"DSA"];
+
+     const newArray = arr.slice(0,3)
+     console.log("New Array : " , newArray)
+
+     */ 
+
+
+     /**
+      * 
+      */
