@@ -90,5 +90,95 @@ console.log("arr1", arr1);
 
 
      /**
-      * 
-      */
+      * ! Revers
+      * ! indexOf()
+     
+
+     const arr1 = [10, 20, 30, 40, 50];
+     arr1.reverse();
+
+     console.log(arr1);
+
+
+     const arr2 = ["java", "js", "css", "go", "php", "py"];
+
+    //  const x = arr2.indexOf("java",0);
+    //   console.log(x);
+
+
+    const y = arr2.includes("go");
+    console.log(y);
+
+     */ 
+
+    /**
+     * ! Sort()
+     * 
+   
+
+    const arr3 = [10, 5, 20, 15, 30,2, 40];
+    arr3.sort((a,b) => b -a);
+    console.log("arr3:", arr3);
+  */
+
+    /**
+     * ! forEach(CallBack) = HOF-> Higher Order function.
+   
+
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    // const output = []
+
+    // arr.forEach(function(element){
+    //        output.push(element*10)
+
+
+
+      // output.push(math.pow(element,2));
+
+
+       arr.forEach(function(element,index,array){
+
+        array[index] = element*10;
+
+        
+            });
+
+    // console.log(output);
+
+       console.log(arr);
+
+         */
+
+       /**
+        * ! Map(CallBack) = HOF
+        *  it returns Modified Array.
+        * 
+        */
+
+       const arr = [1, 2, 3, 4, 5];
+
+               //  const x = arr.map(function(element){
+               //      return element*10;
+               //  });
+
+   // ! Problem-1
+   
+             //  const x = arr.map(function(element){
+             //           element*10;
+             //      });
+
+  // ! Problem-2 
+      const x = arr.map(function(element)
+
+      {
+               if(element < 4)
+                {
+                  return element*10;
+
+                }
+               
+       });
+
+
+       console.log("x :" , x);
+

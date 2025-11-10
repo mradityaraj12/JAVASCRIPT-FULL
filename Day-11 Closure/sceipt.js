@@ -1,6 +1,14 @@
 /**
+ * ! Closure 
+ *      Disadvantage:- High Memory Consumption 
+ * 
+ */
+
+
+
+/**
  *  ! 1.Example
- 
+
 
 const outer=()=>{
     console.log("Inside outer function");
@@ -31,12 +39,12 @@ else{
     console.log("x",x);
 }
 
-*/
+ */
 
 /**
  * ! 2.Example 
  * ! High Memory Consumption 
- 
+ */
 
 const adit=()=>{
     const a=110
@@ -52,13 +60,13 @@ const adit=()=>{
    }
     
    return [inner1,inner2]
-}
+};
 
-const [x1,x2]=adit()
-x1()
-x2()
+const [x1,x2]=adit();
+x1();
+x2();
 
-*/
+
 
 /**
  * ! 3.Example
@@ -131,18 +139,18 @@ console.log("x:",x);
  * ! 6. Example last 
  */
 
-const x=(function fun1(){
-    let x=10;
-    return function increment (){
-        console.log("Inside Increment function..:");
-        x++;
-        console.log("x:",x);
-    }
+// const x=(function fun1(){
+//     let x=10;
+//     return function increment (){
+//         console.log("Inside Increment function..:");
+//         x++;
+//         console.log("x:",x);
+//     }
 
-}) ()
+// }) ()
 
-x()
-x()
-x()
-x()
-x()
+// x()
+// x()
+// x()
+// x()
+// x()
