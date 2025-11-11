@@ -7,6 +7,8 @@
  * ! Empty Array:- [] array without literals(values)
  */
 
+
+
 /**
  * ! Ways to create an Array
  * Todo: 1. By using sqaure bracket and literals
@@ -155,7 +157,7 @@ console.log("arr1", arr1);
         * 
         */
 
-       const arr = [1, 2, 3, 4, 5];
+      //  const arr = [1, 2, 3, 4, 5];
 
                //  const x = arr.map(function(element){
                //      return element*10;
@@ -168,17 +170,137 @@ console.log("arr1", arr1);
              //      });
 
   // ! Problem-2 
-      const x = arr.map(function(element)
+      // const x = arr.map(function(element)
 
-      {
-               if(element < 4)
-                {
-                  return element*10;
-
-                }
+      // {
+      //          if(element < 4)
+      //          {
+      //             return element*10;
+                  
+      //           }     
                
-       });
+      //  });
 
 
-       console.log("x :" , x);
+      //  console.log("x :" , x);
+
+
+/** 
+ * ! Filter(callBack)
+      
+
+      const arr = [10,20,30,40,50];
+
+      const y = arr.filter(function(element)
+                                       {
+                                         if (element< 40){
+                                           return true;
+                                         }
+                                        //  else{
+                                        //    return false;
+                                        //  }
+                                      
+                                      } );
+  console.log("y :" + y);
+ */
+
+
+
+  //  const arr = [10,20,30,40,50];
+
+  //     const y = arr.filter((element) =>{
+                                       
+  //                                        if (element <= 30){
+  //                                         //  return element*10;
+
+  //                                         return true;
+  //                                        }
+                                       
+                                      
+  //                                     } ).map((val) => val*10);
+  // console.log("y :" + y);
+   
+
+
+    /**
+     
+    *  ! Single Line Filter.
+    
+        
+      const arr = [10,20,30,40,50];
+
+      const y = arr.filter((element) => element< 40);
+                                                                    
+                                          
+                 console.log("y :" + y);
+
+       */    
+
+/**
+ * !Sorting
+ 
+
+      const arr = [10,20,30,40,50];
+
+      const y = arr.filter(function(element)
+                                       {
+                                         if (element< 40){
+                                           return true;
+                                         }
+                                         else{
+                                           return false;
+                                         }
+                                      
+                                      } );
+   y.sort((a,b) => a-b);
+  console.log("y :" + y);
+
+  */
+
+  /**
+   * ! Reduce(CallBack , initial Value of Accumulator)
+   * ! Accumulator = total = addtion = Sum.
+   */
+
+  // const arr = [10, 20, 30, 40, 50,60]
+
+  // let sum = 0;
+
+  // for(let i = 0; i<arr.length-1;i++){
+  //    sum = sum + arr[i]
+
+  // }
+
+  // console.log("Sum :" , sum);
+
+
+
+
+
+  // const arr = [10, 20, 30, 40, 50,60]
+  //  const total = arr.reduce(function(Accumulator,element)
+  //                                         {
+  //                                            Accumulator = Accumulator + element;
+  //                                            return Accumulator;
+
+  //                                         },0);
+
+  //     console.log("Total Accumulator :" , total);  
+  
+  
+  /**
+   * ! Single Line Reduce(CallBack).
+  
+ */
+
+  const arr = [10, 20, 30, 40, 50,60]
+   const total = arr.reduce((Accumulator,element) => {
+                                       
+                                             Accumulator = Accumulator + element;
+                                             return Accumulator;
+
+                                          },0);
+
+      console.log("Total Accumulator :" , total);     
+        
 
