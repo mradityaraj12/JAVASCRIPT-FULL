@@ -293,14 +293,262 @@ console.log("arr1", arr1);
   
  */
 
-  const arr = [10, 20, 30, 40, 50,60]
-   const total = arr.reduce((Accumulator,element) => {
+  // const arr = [10, 20, 30, 40, 50,60]
+  //  const total = arr.reduce((Accumulator,element) => {
                                        
-                                             Accumulator = Accumulator + element;
-                                             return Accumulator;
+  //                                            Accumulator = Accumulator + element;
+  //                                            return Accumulator;
 
-                                          },0);
+  //                                         },0);
 
-      console.log("Total Accumulator :" , total);     
+  //     console.log("Total Accumulator :" , total);     
         
+
+      /**
+      * ! Card Desigin.
+       
+
+
+      const cart=[
+        {
+        Item: "Coke Diet",
+        category: "Cold drink",
+        price: 40
+        },
+        {
+          Item: "Maggie",
+        category: "Noodle",
+        price: 30
+        },
+        {
+        Item: "Chings Noodle",
+        category: "Noodle",
+        price: 150
+        },
+        {
+        Item: "Campa",
+        category: "Cold drink",
+        price: 20
+        },
+        {
+        Item: "Cadbury",
+        category: "chocolate",
+        price: 240
+        },
+      ];
+
+        const result= cart.filter(function(element){
+          
+          if( element.category.toLocaleLowerCase() "Chocolate") {
+            return true;
+          }
+
+        });
+  console.log("Result:" , result);
+
+*/
+
+
+
+ /**
+  *! example of reduce methods
+  
+
+
+  const arr = [10, 20, 30, 40, 50]
+
+  const x = arr.reduce((acc , element) => {
+    if(element < 40){
+      acc.push(element * 10)
+    }
+
+    return true;
+  }, []);
+
+  console.log("x :" , x);
+
+  */
+
+  /**
+   * ! REduceRight(CallBack)
+   * ! Some (CallBack) => At Lest One Element Are Present.
+   * ! Every(CallBack)
+    
+
+  const cart=[
+        {
+        Item: "Coke Diet",
+        category: "Cold drink",
+        price: 40
+        },
+       
+
+         {
+        Item: "PowerBank",
+        category: "Electronice",
+        price: 9200
+        },
+
+        {
+        Item: "Phone",
+        category: "Electronice",
+        price: 240000
+        },
+
+         {
+        Item: "Charger",
+        category: "Electronice",
+        price: 2050
+        },
+
+        {
+        Item: "Cadbury",
+        category: "chocolate",
+        price: 240
+        },
+
+        {
+        Item: "AirPods",
+        category: "Electronice",
+        price: 19200
+        }
+      ];
+
+      // const  res1 = cart.some((element , i) => {
+      //   console.log("i:" , i);
+      //   if(element.category.toLocaleLowerCase() === "electronics"){
+      //     return true;
+
+      //   }
+
+      // });
+
+      // console.log("res1:" , res1);
+
+
+      const  res2 = cart.every((element , i) => {
+        console.log("i:" , i);
+        if(element.category.toLocaleLowerCase() === "electronics"){
+          return true;
+
+        }
+
+      });
+
+      console.log("res2:" , res2);
+
+*/
+
+
+
+/**
+ * ! Find(CallBack)   => Single First Occurence Element Ehice FullFile the Condition. 
+ * ! FindLast(CallBack)
+ 
+
+ const cart=[
+  
+         {
+        Item: "PowerBank",
+        category: "Electronice",
+        price: 9200
+        },
+
+        {
+        Item: "Phone",
+        category: "Electronice",
+        price: 240000
+        },
+
+         {
+        Item: "Charger",
+        category: "Electronice",
+        price: 2050
+        },
+        
+         {
+        Item: "Smart Charger",
+        category: "Electronice",
+        price: 20500
+        },
+
+        {
+        Item: "AirPods",
+        category: "Electronice",
+        price: 19200
+        },
+
+         {
+        Item: "AirTag",
+        category: "Electronice",
+        price: 2100
+        }
+
+      ];
+
+
+      const filterItem1 = cart.filter(elemnt => {
+            if(elemnt.price < 2500){
+              return true;
+            }
+      });
+
+
+      // const FindItem = cart.find(elemnt => {
+      //       if(elemnt.price < 2500){
+      //         return true;
+      //       }
+      // });
+
+
+      console.log("FilterItem :" , filterItem1);
+      // console.log("FindItem :" , FindItem);
+
+
+      */
+
+
+
+/**
+ * ! Array Constructor :- Array()
+ * ! Fill
+ 
+
+   const arr = new Array(5);
+   const x = arr.fill("").map((element , index) => {
+    element = element + index  ;
+
+       return element;
+   });
+
+   console.log("x:" , x);
+
+*/
+
+
+/**
+ * ! Array.isArray()
+
+
+const x = Array.isArray(0);
+const y = Array.isArray({});
+const z = Array.isArray([]);
+const p = Array.isArray();
+
+console.log("x:" , x);
+console.log("Y:" , y);
+console.log("Z:" , z);
+console.log("P:" , p);
+
+   */
+
+
+/**
+ * ! Array.From()
+ * 
+ */
+
+const String ="JavaScript";
+const res = Array.from(String);
+console.log("String of Res :" , res);
 
