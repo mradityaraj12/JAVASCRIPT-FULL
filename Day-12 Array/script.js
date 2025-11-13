@@ -511,12 +511,17 @@ console.log("arr1", arr1);
 
 /**
  * ! Array Constructor :- Array()
- * ! Fill
+ * ! Fill(Value , Start , End)
  
 
    const arr = new Array(5);
+
+  //  arr = [__ , ___, ___, ___, ___] => [0,0,0,0,0]
+
+   // arr.fill(0,1,4);
+
    const x = arr.fill("").map((element , index) => {
-    element = element + index  ;
+    element = element + index ;
 
        return element;
    });
@@ -524,6 +529,20 @@ console.log("arr1", arr1);
    console.log("x:" , x);
 
 */
+
+
+  //  const arr = new Array(5);
+  // const x = arr.fill().map((element , index,array) => {
+  //   if(index === 0 || index === array.length-1){
+  //     return element;
+  //   }else{
+  //     return index;
+  //   }
+  // });
+
+  // console.log(x)
+
+
 
 
 /**
@@ -546,9 +565,83 @@ console.log("P:" , p);
 /**
  * ! Array.From()
  * 
- */
+
 
 const String ="JavaScript";
 const res = Array.from(String);
 console.log("String of Res :" , res);
 
+*/
+
+
+
+// const obj ={name: "Aditya" , age: 22};
+// const res1 = Array.from(obj);
+
+
+// console.log("String of Res :" , res1);
+
+/**
+ * ! join()
+ * ! flat()
+ 
+
+// const arr = [1, [2, 3, 4],5];
+
+// const x = arr.flat();
+
+// console.log(x);
+
+
+// const arr = [1, [2, [3, 4],5],6];
+
+// const x = arr.flat(Infinity);
+
+// console.log(x);
+
+
+const arr = [1, [2, [3, 4],5],6];
+
+const x = arr.flat(Infinity);
+
+console.log(x);
+const arr1 = [10,   , [20,30],40]
+const y = arr1.flat();
+console.log("Y:", y);
+
+*/
+
+
+/**
+ * ! Join()
+ 
+
+const arr1 = ["js" ,  "is", "most", "loved", "Most" , "language"];
+
+
+const s1 = arr1.join(" ");
+
+console.log("s1:",s1);
+
+
+const arr2 = ["Aditya","Madhavi","Raj"];
+
+const x = arr2.join(" ");
+
+console.log("x:" , x);
+
+*/
+
+/**
+ * ! Reduce Right (CallBack , Initial Value)
+ */
+
+const arr = [10,20,30,40,50,60];
+   const total = arr.reduceRight((acc ,element) => {
+               console.log("Element:" , element);
+               acc = acc + element;
+               console.log("Acc :" , acc); 
+               return acc;
+   })
+
+   console.log("Total Accumulator :" , total);
